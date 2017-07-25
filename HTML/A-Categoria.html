@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <title> Cirúrgica Saúde</title>
+    <vtex:metaTags/>
+
+    <link href="/arquivos/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
+    <link href="/arquivos/ion.rangeSlider.skinHTML5.css" rel="stylesheet" type="text/css" />
+    <script src="/arquivos/ion.rangeSlider.min.js"></script>
+
+    <vtex:template id="A-commonStyles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body id="category-page">
+
+    <div class="page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="A-Header" />
+
+        <section id="content" class="container">
+
+            <div id="box-bread-brumb">
+                <vtex.cmc:breadCrumb />
+            </div>
+
+            <aside class="col-xs-12 col-sm-6 col-md-3 sidebar">
+            <p class="filtrar visible-xs visible-sm">FILTROS <i class="fa fa-angle-down"></i></p>
+                <div id="departament-navegador">
+                    <!--  Controle: navegador de departamento -->
+                    <vtex.cmc:searchNavigator />
+                </div><!-- #departament-navegador -->          	
+            </aside><!-- .sidebar -->
+       
+            <article id="main-content" class="col-xs-12 col-md-9">
+                <div id="collections">
+                    <vtex.cmc:searchResult layout="85e23371-f0a2-43c2-a6ac-e5464c462fb3" itemCount="16" columnCount="16" />
+                </div><!-- #collections -->
+            </article><!-- #main-content -->
+
+        </section><!-- #content -->
+                    
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="A-Footer" />
+
+    </div><!-- .container-fluid -->
+
+</body>
+    <vtex:template id="A-commonScripts" />
+</html>
